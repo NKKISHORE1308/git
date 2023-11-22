@@ -1,0 +1,43 @@
+PS D:\git> git init
+Reinitialized existing Git repository in D:/git/.git/
+PS D:\git>  git config --global user.name "NKKISHORE1308"
+PS D:\git>  git config --global user.emaile "NKKISHORE1308@gmail.com"
+PS D:\git> git status
+On branch master
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.html
+nothing added to commit but untracked files present (use "git add" to track)
+PS D:\git> git add .
+
+PS D:\git> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.html
+
+PS D:\git> git commit -m "hello.html"
+[master (root-commit) 13268f3] hello.html
+ 1 file changed, 12 insertions(+)        
+ create mode 100644 hello.html
+PS D:\git> git branch
+* master
+PS D:\git> git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use   
+
+    git push --set-upstream master master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.       
+
+PS D:\git> git remote
+PS D:\git> git remote add origin https://github.com/NKKISHORE1308/git.git 
+PS D:\git> git remote
+origin
+PS D:\git> git push origin master
+info: please complete authentication in your browser.
